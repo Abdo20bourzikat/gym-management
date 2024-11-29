@@ -1,0 +1,3 @@
+# Redirect root URL to view/dashboard.php
+RewriteEngine On
+RewriteRule ^$ /view/dashboard.php [L]

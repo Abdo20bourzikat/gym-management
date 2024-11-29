@@ -1,0 +1,48 @@
+version: '3.8'
+
+volumes:
+  datafiles:
+
+services:
+  mysql:
+    image: mysql:8.0.0
+    container_name: mysql8
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=gym-management-db
+      - MYSQL_TCP_PORT=3306
+    volumes:
+      - datafiles:/var/lib/mysql
+      - ./gym-management-db.sql:/docker-entrypoint-initdb.d/gym-management-db.sql
+    restart: always
+
+  website:
+    container_name: php73
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - MYSQL_DBHOST=mysql
+      - MYSQL_DBPORT=3306
+      - MYSQL_DBUSER=root
+      - MYSQL_DBPASS=secret
+      - MYSQL_DBNAME=gym-management-db
+    ports:
+      - 8080:80
+      - 8083:443
+    depends_on:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+      - PMA_USER=root
+      - PMA_PASSWORD=secret
+    ports:
+      - 8081:80
+    depends_on:
+      - mysql
+    restart: always
