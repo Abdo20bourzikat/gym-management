@@ -304,7 +304,7 @@
 
                         <div class="row mt-3">
                             <div class="col-md-4">
-                                <div class="card shadow rounded-3">
+                                <div class="card shadow rounded-3 cardHover">
                                     <div class="card-header">
                                         <h5>
                                             <strong>
@@ -343,7 +343,7 @@
                             </div>
                             
                             <div class="col-md-8">
-                                <div class="card shadow mb-4">
+                                <div class="card shadow mb-4 cardHover">
                                     <div class="card-header">
                                         <h5>
                                             <strong>
@@ -365,7 +365,7 @@
                             <?php
                                 if (count($allMembers) > 0):
                             ?>
-                            <div class="card shadow">
+                            <div class="card shadow cardHover">
                                 <div class="card-header">
                                     <h5>
                                         <strong>
@@ -637,7 +637,7 @@
                                     <div class="row">
                                         <!-- <div class="p-5 mb-4 bg-light shadow rounded-3"> -->
                                             <?php if ($countMembersHaveToPay > 0): ?>
-                                                <div class="card shadow mb-4">
+                                                <div class="card shadow mb-4 cardHover">
             
                                                     <div class="card-body">
                                                         <div style="max-height: 640px; overflow-y: auto; overflow-x: hidden; padding: 10px;">
@@ -747,7 +747,7 @@
                             <?php endif; ?>
 
                                 <div class="col-md-3">
-                                    <div class="card shadow position-relative d-flex flex-column">
+                                    <div class="card shadow position-relative d-flex flex-column cardHover">
                                         <a href="<?= $website['sitelink'] ?>" target="_blank">
                                         <?php if (!empty($website['siteimage'])): ?>
                                             <img src="<?= $website['siteimage'] ?>" style="min-height: 250px;" class="card-img-top" alt="...">

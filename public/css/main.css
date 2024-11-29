@@ -38,6 +38,11 @@ body {
     font-weight: bold;
 }
 
+.cardHover:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    transition: all 0.4s;
+}
 
 /* Optional: Add some responsiveness */
 @media (max-width: 768px) {

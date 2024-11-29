@@ -113,7 +113,7 @@
                     foreach ($membersHaveToPay as $member):
                 ?>
                     <div class="col-md-3 mb-4">
-                        <div class="card my-2 shadow">
+                        <div class="card my-2 shadow cardHover">
 
                             <div class="card-body">
                                 <a href="./memberCard.php?memberId=<?= $member['id'] ?>" class="text-decoration-none text-dark">

@@ -23,7 +23,7 @@
         </li>
     </ul>
 
-    <div class="card shadow mb-4">
+    <div class="card shadow mb-4 cardHover">
         <div class="card-header">
             <h5>
                 <strong><i class="bi bi-bar-chart-fill mx-1"></i> Graphique des paiements</strong>

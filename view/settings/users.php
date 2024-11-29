@@ -146,7 +146,7 @@
                         ?>
     
                         <div class="col-md-3 mb-4">
-                            <div class="card my-2 shadow h-100" style="display: flex; flex-direction: column; justify-content: flex-start;">
+                            <div class="card my-2 shadow h-100 cardHover" style="display: flex; flex-direction: column; justify-content: flex-start;">
                                 <!-- Placeholder space for delete button -->
                                 <div style="height: 40px; position: relative;">
                                     <?php if ($user['role'] == '0'): ?>

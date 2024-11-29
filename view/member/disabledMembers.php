@@ -73,9 +73,9 @@
 
                             if ($currentDate >= $paymentDate): 
                         ?>
-                        <div class="card shadow" style="border-bottom-right-radius: 1.3rem; border: 1px solid red;">
+                        <div class="card shadow cardHover" style="border-bottom-right-radius: 1.3rem; border: 1px solid red;">
                             <?php else: ?>
-                                <div class="card shadow" style="border-bottom-right-radius: 1.3rem;">
+                                <div class="card shadow cardHover" style="border-bottom-right-radius: 1.3rem;">
                             <?php endif; ?>
                             <div class="card-body">
                                 <a href="./memberCard.php?memberId=<?= $member['id'] ?>" class="text-decoration-none text-dark">

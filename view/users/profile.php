@@ -142,7 +142,7 @@
 
 
     <!-- Profile Card -->
-    <div class="card shadow mb-4">
+    <div class="card shadow mb-4 cardHover">
         <div class="card-body px-5 py-4">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center">

@@ -222,7 +222,7 @@
                 <?php endif; ?>
 
                 <div class="col-md-3">
-                    <div class="card shadow position-relative d-flex flex-column">
+                    <div class="card shadow position-relative d-flex flex-column cardHover">
                         <a href="<?= $website['sitelink'] ?>" target="_blank">
                         <?php if (!empty($website['siteimage'])): ?>
                             <img src="<?= $website['siteimage'] ?>" style="height: 200px;" class="card-img-top" alt="...">

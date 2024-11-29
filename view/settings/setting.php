@@ -62,7 +62,7 @@
         </div>
 
 
-        <div class="card shadow mt-3">
+        <div class="card shadow mt-3 cardHover">
             <?php if ($getGymData > 0): ?>
                 <div class="card-header">
                     <h5>
@@ -100,7 +100,7 @@
 
         <div class="col-md-12">
             
-            <div class="card shadow mt-3">
+            <div class="card shadow mt-3 cardHover">
                 <div class="card-header">
                     <h5>
                         <strong>

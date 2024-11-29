@@ -45,7 +45,7 @@
                         
                         <?php foreach ($events as $event): ?>
                             <div class="col-md-4 mb-2">
-                                <div class="card shadow-sm p-3">
+                                <div class="card shadow-sm p-3 cardHover">
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="card-title"><?= htmlspecialchars($event['title']) ?></h5>
