@@ -199,9 +199,9 @@
 
                     if ($currentDate >= $paymentDate): 
                 ?>
-                <div class="card shadow mb-2 bg-light" style="border-bottom-right-radius: 1.5rem; border: 1px solid red;">
+                <div class="card shadow mb-2 bg-light cardHover" style="border-bottom-right-radius: 1.5rem; border: 1px solid red;">
                     <?php else: ?>
-                        <div class="card shadow bg-light" style="border-bottom-right-radius: 1.5rem;">
+                        <div class="card shadow bg-light cardHover" style="border-bottom-right-radius: 1.5rem;">
                     <?php endif; ?>
 
                     <div class="card-body">
@@ -332,9 +332,9 @@
 
                     if ($currentDate >= $paymentDate): 
                 ?>
-                <div class="card shadow bg-light p-3" style="border-bottom-right-radius: 1.3rem; border: 1px solid red;">
+                <div class="card shadow bg-light p-3 cardHover" style="border-bottom-right-radius: 1.3rem; border: 1px solid red;">
                     <?php else: ?>
-                        <div class="card shadow bg-light p-3" style="border-bottom-right-radius: 1.3rem;">
+                        <div class="card shadow bg-light p-3 cardHover" style="border-bottom-right-radius: 1.3rem;">
                     <?php endif; ?>
 
                     <form action="" method="post">
